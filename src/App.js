@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import DefaultLayout from './Components/layouts/DefaultLayout';
 import { publicRoutes } from './routes';
@@ -9,6 +9,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <h1>Hello</h1>
+        <Link to="/">Home </Link>
+        <Link to="/fowlling">Fowlling </Link>
+        <Link to="/upload">Upload</Link>
       </div>
       <Routes>
         {publicRoutes.map((item, index) => {
