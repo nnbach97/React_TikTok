@@ -6,11 +6,13 @@
 
 :root {
   // color
-  --pink: 'fe2c55';
+  --primary: #fe2c55;
+  --black: #000;
+  --text-color: #333;
 
   // width, height
   --default-width-container: 1150px;
-  --default-height-header: 60px
+  --default-height-header: 60px;
 }
 * {
   box-sizing: border-box;
@@ -28,4 +30,16 @@ body {
   color: #161823;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
